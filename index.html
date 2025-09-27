@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable Development Goals</title>
+    <title>SDG Focus: Health & Infrastructure</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container container">
+        <div class="container">
             <a href="#home" class="nav-logo">
-                <i class="fas fa-globe-americas"></i>
-                <span>SDG Goals</span>
+                <i class="fas fa-heartbeat"></i>
+                <span>NextGen Wellbeing</span>
             </a>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#sdgs" class="nav-link">The Goals</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#resources" class="nav-link">Resources</a></li>
-                <li><a href="#action" class="nav-link">Take Action</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="sdg3.html" class="nav-link">SDG 3</a></li>
+                <li><a href="sdg9.html" class="nav-link">SDG 9</a></li>
+                <li><a href="fundus.html" class="nav-link">Fund Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="theme-switcher" id="theme-switcher" aria-label="Toggle dark mode">
@@ -39,144 +38,270 @@
 
     <!-- Hero Section -->
     <header class="hero" id="home">
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">The 17 Sustainable Development Goals</h1>
-                <p class="hero-subtitle">A universal call to action to end poverty, protect the planet, and ensure that all people enjoy peace and prosperity.</p>
-                <a href="#sdgs" class="btn btn-primary">Explore the Goals</a>
+                <h1 class="hero-title">Health, Innovation, and Infrastructure</h1>
+                <p class="hero-subtitle">Focusing on two critical goals for a sustainable future: Good Health & Well-being and Industry, Innovation & Infrastructure.</p>
+                <a href="#sdg3" class="btn btn-primary">Explore the Goals <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </header>
 
-    <!-- SDG Grid Section -->
-    <main class="sdg-section" id="sdgs">
+    <!-- SDG 3 Section -->
+    <section class="sdg-focus-section" id="sdg3">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">The 17 Goals</h2>
-                <p class="section-subtitle">Click on a goal to learn more.</p>
+                <h2 class="section-title">SDG 3: Good Health & Well-being</h2>
+                <p class="section-subtitle">Ensure healthy lives and promote well-being for all at all ages.</p>
             </div>
-            <div class="sdg-grid">
-                <!-- SDGs will be dynamically loaded here -->
-            </div>
-        </div>
-    </main>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About the SDGs</h2>
-                <p class="section-subtitle">A blueprint for a better future.</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership.</p>
-                    <p>They recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth – all while tackling climate change and working to preserve our oceans and forests.</p>
+            <div class="sdg-focus-content">
+                <div class="sdg-focus-text">
+                    <h3>Key Targets</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Reduce maternal mortality.</li>
+                        <li><i class="fas fa-check-circle"></i> End preventable deaths of newborns and children.</li>
+                        <li><i class="fas fa-check-circle"></i> Fight communicable diseases.</li>
+                        <li><i class="fas fa-check-circle"></i> Ensure universal access to sexual and reproductive health-care services.</li>
+                    </ul>
+                    <p>Good health is essential to sustainable development. SDG 3 aims to achieve universal health coverage and provide access to safe and effective medicines and vaccines for all.</p>
                 </div>
-                <div class="about-image">
-                    <img src="about.jpg" alt="About SDGs">
+                <div class="sdg-focus-image">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" alt="Good Health and Well-being">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Resources Section -->
-    <section class="resources-section" id="resources">
+    <!-- SDG 9 Section -->
+    <section class="sdg-focus-section alt" id="sdg9">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Resources</h2>
-                <p class="section-subtitle">Explore these resources to learn more about the SDGs.</p>
+                <h2 class="section-title">SDG 9: Industry, Innovation & Infrastructure</h2>
+                <p class="section-subtitle">Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.</p>
             </div>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <i class="fas fa-book"></i>
-                    <h3>UN SDG Website</h3>
-                    <p>The official website for the Sustainable Development Goals.</p>
-                    <a href="https://sdgs.un.org/goals" class="btn btn-secondary" target="_blank">Learn More</a>
+            <div class="sdg-focus-content">
+                <div class="sdg-focus-image">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" alt="Industry, Innovation & Infrastructure">
                 </div>
-                <div class="resource-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Our World in Data</h3>
-                    <p>Explore data and research on the world's largest problems.</p>
-                    <a href="https://ourworldindata.org/sdgs" class="btn btn-secondary" target="_blank">Explore Data</a>
-                </div>
-                <div class="resource-card">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>The Global Goals</h3>
-                    <p>A campaign to spread awareness of the SDGs.</p>
-                    <a href="https://www.globalgoals.org/" class="btn btn-secondary" target="_blank">Join the Campaign</a>
+                <div class="sdg-focus-text">
+                    <h3>Key Targets</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Develop sustainable and resilient infrastructure.</li>
+                        <li><i class="fas fa-check-circle"></i> Promote inclusive and sustainable industrialization.</li>
+                        <li><i class="fas fa-check-circle"></i> Enhance scientific research and upgrade technological capabilities.</li>
+                        <li><i class="fas fa-check-circle"></i> Increase access to information and communications technology.</li>
+                    </ul>
+                    <p>Investment in infrastructure and innovation are crucial drivers of economic growth and development. SDG 9 aims to build a future where everyone has access to the technology and infrastructure they need to thrive.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Take Action Section -->
-    <section class="action-section" id="action">
+    <!-- Progress Section -->
+    <section class="progress-section" id="progress">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Take Action</h2>
-                <p class="section-subtitle">You have the power to make a difference. Here's how you can help.</p>
+                <h2 class="section-title">Progress Tracker</h2>
+                <p class="section-subtitle">An overview of our collective progress on key targets for SDG 3 and 9.</p>
             </div>
-            <div class="action-grid">
-                <div class="action-card">
-                    <i class="fas fa-hands-helping"></i>
-                    <h3>Volunteer</h3>
-                    <p>Find local organizations and volunteer your time to support the SDGs in your community.</p>
+            <div class="table-container">
+                <table class="progress-table">
+                    <thead>
+                        <tr>
+                            <th>Goal</th>
+                            <th>Target</th>
+                            <th>Progress</th>
+                            <th>Status</th>
+                            <th>Region</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="goal-icon" style="--goal-color: #4C9F38;">3</span> Good Health</td>
+                            <td>Reduce maternal mortality by 70%</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%; background-color: #4C9F38;"></div>
+                                </div>
+                                <span>75%</span>
+                            </td>
+                            <td><span class="status status-on-track">On Track</span></td>
+                            <td>Global</td>
+                        </tr>
+                        <tr>
+                            <td><span class="goal-icon" style="--goal-color: #FD6925;">9</span> Infrastructure</td>
+                            <td>Universal access to internet</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%; background-color: #FD6925;"></div>
+                                </div>
+                                <span>60%</span>
+                            </td>
+                            <td><span class="status status-needs-attention">Needs Attention</span></td>
+                            <td>Global</td>
+                        </tr>
+                        <tr>
+                            <td><span class="goal-icon" style="--goal-color: #4C9F38;">3</span> Good Health</td>
+                            <td>End child mortality</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%; background-color: #4C9F38;"></div>
+                                </div>
+                                <span>85%</span>
+                            </td>
+                            <td><span class="status status-on-track">On Track</span></td>
+                            <td>Sub-Saharan Africa</td>
+                        </tr>
+                        <tr>
+                            <td><span class="goal-icon" style="--goal-color: #FD6925;">9</span> Innovation</td>
+                            <td>Double research investment</td>
+                            <td>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 40%; background-color: #FD6925;"></div>
+                                </div>
+                                <span>40%</span>
+                            </td>
+                            <td><span class="status status-needs-attention">Needs Attention</span></td>
+                            <td>Developed Nations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision-section" id="mission-vision">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Mission & Vision</h2>
+                <p class="section-subtitle">Our commitment to a sustainable and equitable future.</p>
+            </div>
+            <div class="mission-vision-content">
+                <div class="mission-vision-item">
+                    <h3>Our Mission</h3>
+                    <p>To advocate for and contribute to the achievement of Sustainable Development Goals 3 and 9 by promoting universal health coverage, investing in resilient infrastructure, and fostering innovation. We aim to create a world where everyone has the opportunity to live a healthy life and benefit from sustainable industrialization.</p>
                 </div>
-                <div class="action-card">
-                    <i class="fas fa-donate"></i>
-                    <h3>Donate</h3>
-                    <p>Support organizations working on the front lines of sustainable development.</p>
-                </div>
-                <div class="action-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Make Sustainable Choices</h3>
-                    <p>Reduce your carbon footprint by making sustainable choices in your daily life.</p>
+                <div class="mission-vision-item">
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where good health and well-being are a reality for all, and where industry, innovation, and infrastructure drive sustainable economic growth and social progress. A world where no one is left behind, and where technology and collaboration solve the most pressing challenges of our time.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Why It Matters Section -->
+    <section class="why-it-matters-section alt" id="why-it-matters">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why It Matters</h2>
+                <p class="section-subtitle">The impact of our focus on global well-being.</p>
+            </div>
+            <div class="why-it-matters-content">
+                <div class="why-it-matters-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4>Health is a Human Right</h4>
+                    <p>Access to quality healthcare is fundamental to human dignity and well-being. By focusing on SDG 3, we are working to ensure that everyone, regardless of their circumstances, can lead a healthy and productive life.</p>
+                </div>
+                <div class="why-it-matters-item">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Infrastructure is the Backbone of Society</h4>
+                    <p>From transportation and communication to energy and sanitation, resilient infrastructure is essential for a functioning society. SDG 9 provides the framework for building a sustainable and inclusive future for all.</p>
+                </div>
+                <div class="why-it-matters-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Innovation Drives Progress</h4>
+                    <p>New ideas and technologies are critical for solving the world's most pressing challenges. By fostering innovation, we can accelerate progress towards the SDGs and create a more sustainable and equitable world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section" id="statistics">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Statistics</h2>
+                <p class="section-subtitle">A look at the numbers that drive our mission.</p>
+            </div>
+            <div class="statistics-content">
+                <div class="statistic-item">
+                    <i class="fas fa-users"></i>
+                    <h3 class="statistic-number">3.9B</h3>
+                    <p class="statistic-label">People without access to essential health services</p>
+                </div>
+                <div class="statistic-item">
+                    <i class="fas fa-road"></i>
+                    <h3 class="statistic-number">1 in 3</h3>
+                    <p class="statistic-label">People in developing countries lack access to all-weather roads</p>
+                </div>
+                <div class="statistic-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3 class="statistic-number">3.7B</h3>
+                    <p class="statistic-label">People who have never used the internet</p>
+                </div>
+                <div class="statistic-item">
+                    <i class="fas fa-child"></i>
+                    <h3 class="statistic-number">5.2M</h3>
+                    <p class="statistic-label">Children under 5 who die from preventable causes each year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section alt" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Your questions, answered.</p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <h3 class="faq-question">What are the Sustainable Development Goals?</h3>
+                    <div class="faq-answer">
+                        <p>The Sustainable Development Goals (SDGs) are a set of 17 global goals established by the United Nations in 2015. They are a universal call to action to end poverty, protect the planet, and ensure that all people enjoy peace and prosperity by 2030.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Why focus on SDG 3 and 9?</h3>
+                    <div class="faq-answer">
+                        <p>SDG 3 (Good Health and Well-being) and SDG 9 (Industry, Innovation, and Infrastructure) are deeply interconnected. A healthy population is essential for a productive workforce, while a robust infrastructure is necessary to deliver healthcare services and drive economic growth. By focusing on these two goals, we can create a virtuous cycle of development.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I get involved?</h3>
+                    <div class="faq-answer">
+                        <p>There are many ways to get involved. You can start by educating yourself and others about the SDGs. You can also support organizations that are working to achieve the goals, or you can take action in your own community. Every little bit helps!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-subtitle">Have questions? Get in touch!</p>
-            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>We'd love to hear from you. Here's how you can reach us.</p>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 SDG Street, New York, USA</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contact@sdginitiative.org</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>+1 234 567 8900</p>
-                    </div>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Join our mission for better health and smarter infrastructure. Let's connect.</p>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <i class="fas fa-user"></i>
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
     </section>
@@ -185,20 +310,21 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-about">
-                    <h3>SDG Goals</h3>
-                    <p>Working towards a sustainable future for all.</p>
+                <div class="footer-col">
+                    <h3 class="footer-logo">SDG 3 & 9 Initiative</h3>
+                    <p>Building a healthier, more innovative future for all.</p>
                 </div>
-                <div class="footer-links">
+                <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sdgs">The Goals</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sdg3.html">SDG 3</a></li>
+                        <li><a href="sdg9.html">SDG 9</a></li>
+                        <li><a href="fundus.html">Fund Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
+                <div class="footer-col">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -209,8 +335,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SDG Initiative. All Rights Reserved.</p>
-                <p>Designed and Developed By <a href="www.primecreators.co">Prime Creators</a></p>
+                <p>&copy; 2025 SDG 3 & 9 Initiative. All Rights Reserved.</p>
+                 <p>Designed and Developed By <a href="www.primecreators.co">Prime Creators</a></p>
             </div>
         </div>
     </footer>

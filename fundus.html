@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Us - SDG 3 & 9 Initiative</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="sub-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>NextGen Wellbeing</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="sdg3.html" class="nav-link">SDG 3</a></li>
+                <li><a href="sdg9.html" class="nav-link">SDG 9</a></li>
+                <li><a href="fundus.html" class="nav-link active">Fund Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-switcher" id="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Fund Our Mission</h1>
+            <p>Your contribution can make a world of difference. Help us achieve our goals for a healthier and more innovative future.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container page-content">
+        <section class="section">
+            <div class="funding-container">
+                <div class="funding-info">
+                    <h2 class="section-title">Your Support Matters</h2>
+                    <p>By contributing to our cause, you are directly supporting projects that build resilient infrastructure, promote sustainable industrialization, and foster innovation. Your donation will help us to:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Provide access to affordable and clean energy.</li>
+                        <li><i class="fas fa-check-circle"></i> Support small-scale enterprises and help them to grow.</li>
+                        <li><i class="fas fa-check-circle"></i> Promote green technologies and sustainable practices.</li>
+                    </ul>
+                    <div class="funding-progress">
+                        <h3>Our Goal: $1,000,000</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-funded" style="width: 45%;"><span>45%</span></div>
+                        </div>
+                        <p><strong>$450,000</strong> raised so far.</p>
+                    </div>
+                </div>
+                <div class="funding-form-container">
+                    <form id="donation-form" class="donation-form">
+                        <h3 class="form-title">Make a Donation</h3>
+                        <p class="form-subtitle">Every contribution, no matter how small, makes a difference.</p>
+                        <div class="amount-selection">
+                            <div class="amount-option" data-amount="25">$25</div>
+                            <div class="amount-option" data-amount="50">$50</div>
+                            <div class="amount-option" data-amount="100">$100</div>
+                            <div class="amount-option" data-amount="250">$250</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Custom Amount (USD)</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" id="amount" name="amount" min="1" max="500" placeholder="Enter amount" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-donate">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="footer-logo">SDG 3 & 9 Initiative</h3>
+                    <p>Building a healthier, more innovative future for all.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sdg3.html">SDG 3</a></li>
+                        <li><a href="sdg9.html">SDG 9</a></li>
+                        <li><a href="fundus.html">Fund Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SDG 3 & 9 Initiative. All Rights Reserved.</p>
+                 <p>Designed and Developed By <a href="www.primecreators.co">Prime Creators</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const donationForm = document.getElementById('donation-form');
+        const amountInput = document.getElementById('amount');
+        const amountOptions = document.querySelectorAll('.amount-option');
+        const progressBar = document.querySelector('.progress-bar-funded');
+        const raisedAmountText = document.querySelector('.funding-progress p strong');
+        const goal = 1000000;
+        let raisedAmount = 450000;
+
+        const updateProgress = () => {
+            const percentage = (raisedAmount / goal) * 100;
+            progressBar.style.width = percentage + '%';
+            progressBar.querySelector('span').textContent = Math.round(percentage) + '%';
+            raisedAmountText.textContent = '$' + raisedAmount.toLocaleString();
+        };
+
+        amountOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                amountOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+                amountInput.value = option.dataset.amount;
+            });
+        });
+
+        amountInput.addEventListener('input', () => {
+            amountOptions.forEach(opt => opt.classList.remove('selected'));
+            const customAmount = parseInt(amountInput.value);
+            amountOptions.forEach(opt => {
+                if (parseInt(opt.dataset.amount) === customAmount) {
+                    opt.classList.add('selected');
+                }
+            });
+        });
+
+        donationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const amount = parseInt(amountInput.value);
+            if (amount > 500) {
+                alert('You cannot donate more than $500.');
+            } else if (amount > 0) {
+                raisedAmount += amount;
+                updateProgress();
+                alert('Thank you for your donation of $' + amount + '!');
+                donationForm.reset();
+                amountOptions.forEach(opt => opt.classList.remove('selected'));
+            }
+        });
+
+        // Initial progress update
+        updateProgress();
+    </script>
+</body>
+</html>

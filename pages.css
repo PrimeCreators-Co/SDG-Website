@@ -1,0 +1,385 @@
+/* Page Header */
+.page-header {
+    background-color: var(--color-surface);
+    padding: var(--space-xl) 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Page Content */
+.page-content {
+    padding: var(--space-xl) 0;
+}
+
+.section {
+    margin-bottom: var(--space-xl);
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+}
+
+/* SDG Page Specifics */
+.sdg-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: center;
+}
+
+.sdg-intro-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.quote {
+    background: var(--color-surface);
+    padding: var(--space-lg);
+    border-left: 5px solid var(--color-primary-sdg3);
+    margin-top: var(--space-lg);
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+#sdg9-content .quote {
+    border-left-color: var(--color-primary-sdg9);
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+}
+
+.focus-card {
+    background: var(--color-surface);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    text-align: center;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-md);
+}
+
+.focus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.focus-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+}
+
+#sdg3-content .focus-icon {
+    color: var(--color-primary-sdg3);
+}
+
+#sdg9-content .focus-icon {
+    color: var(--color-primary-sdg9);
+}
+
+.success-stories .story-card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-xl);
+    align-items: center;
+    background: var(--color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.story-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.challenge-card {
+    background: var(--color-surface);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.challenge-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-secondary);
+}
+
+.take-action {
+    text-align: center;
+}
+
+.action-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.action-step {
+    background: var(--color-surface);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition);
+}
+
+.action-step:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.action-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+}
+
+#sdg3-content .action-icon {
+    color: var(--color-primary-sdg3);
+}
+
+#sdg9-content .action-icon {
+    color: var(--color-primary-sdg9);
+}
+
+
+/* Funding Page */
+.funding-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: flex-start;
+}
+
+.funding-info h2 {
+    text-align: left;
+}
+
+.funding-info ul {
+    list-style: none;
+    margin: var(--space-lg) 0;
+}
+
+.funding-info ul li {
+    margin-bottom: var(--space-md);
+    font-size: 1.1rem;
+    color: var(--color-muted);
+}
+
+.funding-info ul li i {
+    color: var(--color-primary-sdg3);
+    margin-right: var(--space-sm);
+}
+
+.funding-progress {
+    margin-top: var(--space-xl);
+}
+
+.funding-progress h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 25px;
+    background-color: var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: var(--space-sm);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-bar-funded {
+    height: 100%;
+    background: linear-gradient(45deg, var(--color-primary-sdg3), var(--dark-color-primary-sdg3));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: width 1s ease-in-out;
+}
+
+.funding-form-container {
+    background: var(--color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.donation-form .form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    text-align: center;
+}
+
+.donation-form .form-subtitle {
+    text-align: center;
+    color: var(--color-muted);
+    margin-bottom: var(--space-lg);
+}
+
+.amount-selection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.amount-option {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-md);
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition);
+    font-weight: 600;
+}
+
+.amount-option:hover, .amount-option.selected {
+    background: var(--color-primary-sdg3);
+    color: #fff;
+    border-color: var(--color-primary-sdg3);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group-text {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-right: none;
+    padding: 0 1rem;
+    border-radius: var(--radius) 0 0 var(--radius);
+    display: flex;
+    align-items: center;
+}
+
+.donation-form input[type="number"] {
+    border-left: none;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.btn-donate {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    margin-top: var(--space-md);
+}
+
+
+/* Contact Page */
+.contact-page-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-xl);
+}
+
+.contact-form-container {
+    background: var(--color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-form-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+}
+
+.contact-info-container {
+    background: var(--color-surface);
+    padding: var(--space-xl);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-info-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: var(--space-lg);
+}
+
+.contact-info-container .info-item {
+    margin-bottom: var(--space-lg);
+}
+
+.contact-info-container .social-icons {
+    margin-top: var(--space-lg);
+}
+
+/* Form Input Styling */
+.donation-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.donation-form label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.donation-form input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.donation-form input:hover {
+    background-color: var(--color-surface);
+}
+
+.donation-form input:focus {
+    outline: none;
+    border-color: var(--color-primary-sdg3);
+    box-shadow: 0 0 0 4px rgba(76, 159, 56, 0.1);
+}
